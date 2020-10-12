@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bipolar</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- user css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- modal register -->
+    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="images/logo1.png" alt="">
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name" required/>
+                        <input type="text" class="form-control" placeholder="Last Name" required/>
+                        <input type="email" class="form-control" placeholder="Email" reqiured/>
+                        <input type="password" class="form-control" placeholder="Password" required/>
+                        <input type="password" class="form-control" placeholder="Confirm Password" required/>
+                    </form>
+                    <p><input type="checkbox"> I want to recieve email update</p>
+                    <p class="privacy">I agree to the <a href="" data-toggle="modal" data-target="#policy">privacy policy</a></p>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html"><button type="submit" class="btn btnprimary">Register</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal login -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="images/logo1.png" alt="">
+                    <h5 class="modal-title" id="exampleModalLabel">Login here</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" reqiured/>
+                        <input type="password" class="form-control" placeholder="Password" required/>
+                    </form>
+                </div>
+                <div class="loginpass">
+                    <p class="remem"><input type="checkbox" class="checkbox"> Remember Password</p>
+                    <p class="forgot">Forgot Password <a href="" class="" data-toggle="modal" data-target="#forgotPass">click here</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html"><button type="submit" class="btn btnprimary">Login</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- privacy policy modal -->
+    <div class="modal fade" id="policy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="images/logo1.png" alt="">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        ...
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- forgot password modal -->
+    <div class="modal fade" id="forgotPass" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="images/logo1.png" alt="">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <form action="" class="form-group" method="">
+                            <input type="email" class="form-control" name="email" placeholder="Email">
+                            <button class="btn btn-lg"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- navbar section -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt=""></a>
+            <p class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon trigram">&#x2630</span> <span class="cancel">&#10006</span>
+            </p>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-center" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">Facts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="">Play Game</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-center" href="#contact">Contact</a>
+                    </li> -->
+                    <div class="text-center">
+                        <button class="btn button" data-toggle="modal" data-target="#register">Register</button>
+                        <button class="btn button" data-toggle="modal" data-target="#login">Login</button>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="rain"></div>
+    <div class="top">
+        <a href="#banner"><big><big><big><big>&uArr;</big></big></big></big></a>
+    </div>
+    <div class="container-fluid">
+        <div id="banner">
+            <div class="row">
+                <div class="col-4 social">
+                    <a class="socialicon" href=""><img src="images/social-icon/facebook-square.svg" alt=""></a>
+                    <a class="socialicon" href="https://github.com/hebraheem/" target="_blank"><img
+                            src="images/social-icon/github.svg" alt=""></a>
+                    <a class="socialicon" href=""><img src="images/social-icon/linkedin.svg" alt=""></a>
+                    <a class="socialicon" href=""><img src="images/social-icon/twitter-square.svg" alt=""></a>
+                    <a class="socialicon" href="mailto:iadebiyi01@gmail.com" target="_blank"><img src="images/social-icon/envelope.svg" alt=""></a>
+                </div>
+                <div class="col banner-text">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 bannerT">
+                            <h1>Mental health is about wellness rather than illness</h1>
+                        </div>
+                        <div class="col-lg-6 col-md-12 bannerImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section bipolar explanation -->
+    <div class="container-fluid" id="home">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+<!-- Footer section -->
+<div class="foot">
+    <div class="container" id="footer">
+        <div class="row">
+            <div class="col">
+                <ul class="text-center footer-link">
+                    <li><a href="about.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <li><a href=""></a>Home</li> -->
+                </ul>
+                <hr>
+                <div class="footer-icon">
+                    <p>&copy; 2020 Bipolar Inc. Allright Reserved</p>
+                    <span>
+                        <a href=""><img src="images/social-icon/facebook-square.svg" alt=""></a>
+                        <a href=""><img src="images/social-icon/github.svg" alt=""></a>
+                        <a href=""><img src="images/social-icon/linkedin.svg" alt=""></a>
+                        <a href=""><img src="images/social-icon/twitter-square.svg" alt=""></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+      
+
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrapjquery.js"></script>
+    <script src="js/proper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

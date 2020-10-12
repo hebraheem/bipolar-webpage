@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About us</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- user css -->
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- modal register -->
+    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="images/logo1.png" alt="">
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name" required/>
+                        <input type="text" class="form-control" placeholder="Last Name" required/>
+                        <input type="email" class="form-control" placeholder="Email" reqiured/>
+                        <input type="password" class="form-control" placeholder="Password" required/>
+                        <input type="password" class="form-control" placeholder="Confirm Password" required/>
+                    </form>
+                    <p><input type="checkbox"> I want to recieve email update</p>
+                    <p class="privacy">I agree to the <a href="" data-toggle="modal" data-target="#policy">privacy policy</a></p>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html"><button type="submit" class="btn btnprimary">Register</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal login -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="images/logo1.png" alt="">
+                    <h5 class="modal-title" id="exampleModalLabel">Login here</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" reqiured/>
+                        <input type="password" class="form-control" placeholder="Password" required/>
+                    </form>
+                </div>
+                <div class="loginpass">
+                    <p class="remem"><input type="checkbox" class="checkbox"> Remember Password</p>
+                    <p class="forgot">Forgot Password <a href="" class="" data-toggle="modal" data-target="#forgotPass">click here</a></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="index.html"><button type="submit" class="btn btnprimary">Login</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- privacy policy modal -->
+    <div class="modal fade" id="policy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="images/logo1.png" alt="">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        ...
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- forgot password modal -->
+    <div class="modal fade" id="forgotPass" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="images/logo1.png" alt="">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <form action="" class="form-group" method="">
+                            <input type="email" class="form-control" name="email" placeholder="Email">
+                            <button class="btn btn-lg"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- navbar section -->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html"><img src="images/logo2.png" alt=""></a>
+            <p class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon trigram">&#x2630</span> <span class="cancel">&#10006</span>
+            </p>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-center" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link text-center" href="#">Facts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#">Play Game</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="#contact">Contact</a>
+                    </li>
+                    <div class="text-center">
+                        <button class="btn button" data-toggle="modal" data-target="#register">Register</button>
+                        <button class="btn button" data-toggle="modal" data-target="#login">Login</button>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="rain"></div>
+
+    <!-- About section -->
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col about">
+                <h2 class="about-header text-center">About us</h2>
+                <div class="about-logo"><img src="images/logo3.png" alt=""></div>
+                <p> Bipolar is an online health information resource for individuals and general public to provide for them the important information(s) about bipolar disorder. <br> Bipolar was birthed due to the reduced awareness of mental health in Nigeria, this include bipolar disorder. A typical nigerian thinks mental illness such as bipolar disorder is not real this infact as made the diagnosis and treatment difficult, In NIgeria about 1.5 million cases are reacorded anually. This site has really work hard to bridge this gap.</p>
+                <p> Individuals with this disorder live with it for so long and might have no idea they have bipolar disorder. This distrupt their activities of daily living because of the extreme mood swing i.e they are either really happy or really sad. Our work is driven by our commitment to promote mental health as critical part of overall wellness. </p>
+                <!-- <h3 class="text-center">Our Mission</h3>
+                <p class="text-center">Is to present high quality, relevant health & wellness information about bipolar disorder that is trusted, easy to understand anywhere, anytime and on any device.</p>
+                <h3 class="text-center">Our Vission</h3>
+                <p class="text-center">Is to increase awearness as regard this illness and provide correct information that can help an individuals take appropriate decision.</p> -->
+            </div>
+            <div class="row">
+                <div class="col-sm-6 statement">
+                    <h3 class="text-center">Our Mission</h3>
+                    <p class="text-cente">Is to present high quality, relevant health & wellness information about bipolar disorder that is trusted, easy to understand anywhere, anytime and on any device.</p>
+                </div>
+                <div class="col-sm-6 statement">
+                    <h3 class="text-center">Our Vission</h3>
+                    <p class="text-cente">Is to increase awearness as regard this illness and provide correct information that can help an individuals take appropriate decision.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          
+            <div class="section-title">
+            <h2>Contact</h2>
+            </div>
+          
+            <div class="row mt-1">
+          
+            <div class="col-lg-4">
+                <div class="info">
+                <div class="address flex">
+                    <img src="images/social-icon/map-marker-alt.svg" style="width: 30px; height: 30px;" alt="">
+                    <div>
+                    <h4>Location:</h4>
+                    <p>No 7, Omo-Igahdalo Ogudu Lagos</p>
+                    </div>
+                </div>
+          
+                <div class="email flex">
+                    <img src="images/social-icon/envelope.svg" style="width: 30px; height: 30px;" alt="">
+                    <div>
+                    <h4>Email:</h4>
+                    <p><a class="href" href="mailto:iadebiyi01@gmail.com"> hello@doctor.com</a></p>
+                    </div>
+                </div>
+          
+                <div class="phone flex">
+                    <img src="images/social-icon/phone-square-alt.svg" style="width: 30px; height: 30px;" alt="">
+                    <div>
+                    <h4>Call:</h4>
+                    <p><a class="href" href="tel:2348139569356">+234 813 956 9356</a></p>
+                    </div>
+                </div>
+          
+                </div>
+          
+            </div>
+          
+            <div class="col-lg-8 mt-5 mt-lg-0">
+          
+                <form action="" method="" role="form" class="php-email-form">
+                <div class="form-row">
+                    <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" required/>
+                    </div>
+                    <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"  required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" required/>
+                    <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5"placeholder="Please write something for us" required></textarea>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+          
+            </div>
+          
+            </div>
+          
+        </div>
+    </section><!-- End Contact Section -->
+
+        <!-- Footer section -->
+    <div class="foot">
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="col">
+                    <ul class="text-center footer-link">
+                        <li><a href="about.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <!-- <li><a href=""></a>Home</li> -->
+                    </ul>
+                    <hr>
+                    <div class="footer-icon text-center">
+                        <p>&copy; 2020 Bipolar Inc. Allright Reserved</p>
+                        <span>
+                            <a href=""><img src="images/social-icon/facebook-square.svg" alt=""></a>
+                            <a href=""><img src="images/social-icon/github.svg" alt=""></a>
+                            <a href=""><img src="images/social-icon/linkedin.svg" alt=""></a>
+                            <a href=""><img src="images/social-icon/twitter-square.svg" alt=""></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrapjquery.js"></script>
+    <script src="js/proper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
