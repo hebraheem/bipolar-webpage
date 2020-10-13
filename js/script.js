@@ -24,6 +24,29 @@ $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
 })
 
+//For get support form
+
+let form = document.querySelector(".form");
+let button = document.querySelector("#actbtn");
+button.addEventListener("click", showform);
+
+function showform(){
+    if (form.style.display == "none"){
+        form.style.display = "block"
+    } else {
+        form.style.display = "none"
+    }
+}
+
+// $("#actbtn").click(function(){
+//     // let for $(".form");
+//     if ($(".form").css("display" == "none")){
+//         $(".form").css("display", "block");
+//     } else {
+//         $(".form").css("display", "none");
+//     }
+// })
+
 
 
 

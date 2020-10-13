@@ -236,7 +236,6 @@ iframe {
 .call-image {
     width: 100%;
     height: 150px;
-    border: solid red;
 }
 .action-button {
     position: relative;
@@ -250,6 +249,12 @@ iframe {
 }
 .action-button:hover{
     color: #025c76;
+}
+.form {
+    display: none;
+}
+#support-from {
+    width: 100%;
 }
 
 
