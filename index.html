@@ -16,6 +16,32 @@
 </head>
 
 <body>
+    <!-- modal for get support -->
+    <div class="modal fade" id="actbtn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="images/logo1.png" alt="">
+                    <h5 class="modal-title" id="exampleModalLabel">Get support</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name" required/>
+                        <input type="text" class="form-control" placeholder="Last Name" required/>
+                        <input type="email" class="form-control" placeholder="Email" reqiured/>
+                        <input type="number" class="form-control" placeholder="Age" required/>
+                        <textarea type="password" class="form-control" placeholder="Leave your message here" required></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href=""><button type="submit" class="btn btnprimary">Submit</button></a>
+                </div>
+            </div>
+        </div>
+        </div>
     <!-- modal register -->
     <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -40,7 +66,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <a href="index.html"><button type="submit" class="btn btnprimary">Register</button></a>
+                    <a href="user.html"><button type="submit" class="btn btnprimary">Register</button></a>
                 </div>
             </div>
         </div>
@@ -67,7 +93,7 @@
                     <p class="forgot">Forgot Password <a href="" class="" data-toggle="modal" data-target="#forgotPass">click here</a></p>
                 </div>
                 <div class="modal-footer">
-                    <a href="index.html"><button type="submit" class="btn btnprimary">Login</button></a>
+                    <a href="user.html"><button type="submit" class="btn btnprimary">Login</button></a>
                 </div>
             </div>
         </div>
@@ -129,9 +155,6 @@
                     <li class="nav-item">
                         <a class="nav-link text-center" href="">Play Game</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link text-center" href="#contact">Contact</a>
-                    </li> -->
                     <div class="text-center">
                         <button class="btn button" data-toggle="modal" data-target="#register">Register</button>
                         <button class="btn button" data-toggle="modal" data-target="#login">Login</button>
@@ -142,7 +165,7 @@
     </div>
     <div class="rain"></div>
     <div class="top">
-        <a href="#banner"><big><big><big><big>&uArr;</big></big></big></big></a>
+        <a href="#banner"><big><big><big>&uArr;</big></big></big></a>
     </div>
     <div class="container-fluid" >
         <div id="banner">
@@ -217,7 +240,7 @@
                         <li>Overly happy or high for long period of time</li>
                         <li>Having a decreased need for sleep</li>
                         <li>talking very fas, often with racing thought</li>
-                        <li>Becoming esily d
+                        <li>Becoming easily distracted
                         <li>Engaging in a risk behaviour, such as having impulsive sex, gambling with life saving, or going on big spending sprees.</li>
                         </li>
                     </ul>
@@ -234,7 +257,7 @@
                 </p>
             </div>
             <div class="col-lg-6 col-md-12 text-center">
-                <iframe src="images/bipolarvid.mp4" frameborder="1" class="text-center"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5u-6dV0YgRc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                <!-- <iframe src="images/bipolarvid.mp" id="irame" frameborder="1" class="text-center" autoplay="disable"></iframe> -->
                 <h3 class="cope text-left">Coping with Bipolar</h3>
                 <p class="text-left">The followings can help cope with bipolar
                     <ul class="text-left">
@@ -258,24 +281,45 @@
                 </div>
                 <div class="col-lg-6 col-md-6 co-sm-6 image2">
                     <div class="call-image image4">
-                    <img src="images/getsupport.png"  alt="">
-                    <button class="action-button" id="actbtn">Get support</button>
+                    <img src="images/getsupport.png" alt="" class="get-support">
+                    <button class="action-button" id="actbtn" data-target="#actbtn" data-toggle="modal">Get support</button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12" id="support-form">
-                        <form action="" class="form-group form">
-                            <input class="form-control" type="text" name="name" placeholder="Firstname" required>
-                            <input class="form-control" type="text" name="lasname" placeholder="Lastname" required>
-                            <input class="form-control" type="email" name="email" id="" placeholder="example@you.com" required>
-                            <input class="form-control" type="number" placeholder="Phone Number">
-                            <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Write your message"></textarea>
-                            <input class="form-control" type="submit" id="submit">
-                        </form>
+            </div>  
+    </section>
+    <!-- gaming section -->
+    <section id="game">
+        <div class="row">
+            <!-- <div class="col">
+                <h1 id="level-title">Click the button to Start</h1>
+                <p>Instruction: click on the box in a progressive manner i.e for every level you will start click from level one to the current level click.</p>
+                <div class="container game-container text-center">
+                <div lass="row">
+              
+                    <div type="button" id="green" class="btn-game green">
+              
+                    </div>
+              
+                    <div type="button" id="red" class="btn-game red">
+              
                     </div>
                 </div>
-            </div>
-            
+              
+                  <div class="row">
+              
+                    <div type="button" id="yellow" class="btn-game yellow">
+              
+                    </div>
+                    <div type="button" id="blue" class="btn-game blue">
+              
+                    </div>
+              
+                  </div>
+                  <button class="start">Start</button>
+                </div>
+
+            </div> -->
+        </div>
     </section>
     
     <div class="foot">

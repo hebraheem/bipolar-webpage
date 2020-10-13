@@ -151,7 +151,7 @@ li a:hover {
     position: fixed;
     width: 5%;
     height: 40%;
-    z-index: 2;
+    z-index: 1;
 }
 .socialicon img {
     width: 30px;
@@ -257,11 +257,69 @@ iframe {
     width: 100%;
 }
 
+/* Game section */
+#game {
+    padding: 0 8%;
+    padding-bottom: 50px;
+}
+#level-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .game-container {
+    display: block;
+    width: 50%;
+    margin: auto;
+  
+  }
+  
+  .btn-game {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+  }
+  .start {
+    width: 100px;
+    height: 45px;
+    margin: auto;
+  }
+  
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+
 
  /* Footer section styling */
  .foot {
     background-color: #025c76;
-    width: 100%;}
+    width: 100%;
+}
 .footer-link li {
     list-style: none;
     display: inline-block;
