@@ -229,3 +229,12 @@ span img {
   
 
 }
+@media(max-width:499px){
+    .form-text {
+        width: 55%;
+    }
+    
+    .radio {
+        width: 45%;
+    }
+}
