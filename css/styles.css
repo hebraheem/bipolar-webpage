@@ -398,5 +398,8 @@ hr {
         width: 300px;
         margin-left: 0;
     }
+    .social {
+        left: -10px;
+    }
 
 }

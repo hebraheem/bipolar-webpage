@@ -26,21 +26,21 @@ $('#myModal').on('shown.bs.modal', function () {
 
 //For get support form
 
-let form = document.querySelector(".form");
-let button = document.querySelector("#actbtn");
-let button1 = document.querySelector(".get-support");
+// let form = document.querySelector(".form");
+// let button = document.querySelector("#actbtn");
+// let button1 = document.querySelector(".get-support");
 
-button1.addEventListener("click", showform);
-button.addEventListener("click", showform);
+// button1.addEventListener("click", showform);
+// button.addEventListener("click", showform);
 
 
-function showform(){
-    if (form.style.display == "none"){
-        form.style.display = "block"
-    } else {
-        form.style.display = "none"
-    }
-}
+// function showform(){
+//     if (form.style.display == "none"){
+//         form.style.display = "block"
+//     } else {
+//         form.style.display = "none"
+//     }
+// }
 
 // for game section
 
