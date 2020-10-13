@@ -402,4 +402,20 @@ hr {
         left: -10px;
     }
 
+
+}
+@media(max-width: 380px){
+    .action-button {
+        /* position: relative; */
+        bottom: 0px;
+        left: 0px;
+        /* background-color: #EC739E;
+        color: #ffffff;
+        border: solid #EC739E;
+        width: 150px;
+        border-radius: 5px; */
+    }
+    .call-to-action {
+        height: 450px;
+    }
 }

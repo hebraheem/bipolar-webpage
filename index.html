@@ -16,6 +16,36 @@
 </head>
 
 <body>
+        <!-- modal self assesment -->
+        <div class="modal fade" id="take-text" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <img src="images/logo1.png" alt="">
+                        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                        <p>For your privacy assurance we hurge you to resgister or use the login button to take assesment/p>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="form-group">
+                            <input type="text" class="form-control" placeholder="First Name" required/>
+                            <input type="text" class="form-control" placeholder="Last Name" required/>
+                            <input type="email" class="form-control" placeholder="Email" reqiured/>
+                            <input type="password" class="form-control" placeholder="Password" required/>
+                            <input type="password" class="form-control" placeholder="Confirm Password" required/>
+                        </form>
+                        <p><input type="checkbox"> I want to recieve email update</p>
+                        <p class="privacy">I agree to the <a href="" data-toggle="modal" data-target="#policy">privacy policy</a></p>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <a href="user.html"><button type="submit" class="btn btnprimary">Register</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     <!-- modal for get support -->
     <div class="modal fade" id="actbtn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -276,7 +306,7 @@
                 <div class="col-lg-6 col-md-6 co-sm-6 image2">
                     <div class="call-image image4">
                     <img src="images/assesment.png"  alt="">
-                    <button class="action-button">Self assesment</button>
+                    <button class="action-button" id="take-text" data-target="#take-text" data-toggle="modal">Self assesment</button>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 co-sm-6 image2">
