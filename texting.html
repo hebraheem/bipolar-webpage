@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for=""><span>yes</span><input type="radio" name="radio" value="yes" class="yes"></label>
+    <input type="radio" name="radio" value="no" class="no">no
+    <input type="radio" name="radio1" value="yes" class="yes">yes
+    <input type="radio" name="radio1" value="no" class="no">no
+    <input type="radio" name="radio2" value="yes" class="yes">yes
+    <input type="radio" name="radio2" value="no" class="no">no
+    <input type="radio" name="radio3" value="yes" class="yes">yes
+    <input type="radio" name="radio3" value="no" class="no">no
+   
+    <input type="submit" id="submit" name="submit">
+   
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+         counter=0;
+        // $("input[type='radio']:checked").each(function(){
+        //     if(this.value === "yes"){
+        //         console.log($("input[type='radio']:checked").value);
+        //         counter++;
+        //         console.log(counter);
+        //     }
+        // })
+
+            // $(".yes").change(function(){
+            //     if(this.value === "yes"){
+            //         counter++
+            //         // console.log(counter)
+            //         if (counter > 7) {
+            //             console.log("you need to see a doc");
+            //         } if (counter > 5 && counter <7) {
+            //             console.log("you might need to see a doc")
+            //         }else {
+            //             console.log("keep up the good work");
+            //         }
+            //     }
+            // })
+
+
+            
+
+            $("#submit").click(function(){
+                let yes = $(".yes").value;
+                console.log(yes)
+                if(this.yes === "yes"){
+                    counter++
+                    // console.log(counter)
+                    if (counter > 7) {
+                        console.log("you need to see a doc");
+                    } if (counter > 5 && counter <7) {
+                        console.log("you might need to see a doc")
+                    }else {
+                        console.log("keep up the good work");
+                    }
+                }
+            })
+    </script>
+</body>
+</html>
