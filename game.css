@@ -6,12 +6,12 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 2.5rem;
-  margin:  5%;
+  margin:  8%;
   color: #000;
 }
 p {
   color: #000;
-  font: 1.8rem;
+  font-size: 2rem;
 }
 
 .container {
@@ -33,6 +33,7 @@ p {
   width: 100px;
   height: 45px;
   margin: auto;
+  font-size: 1.2rem;
 }
 
 .game-over {
@@ -63,10 +64,17 @@ p {
 .button {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 0;
   width: 100px;
   height: 45px;
   background-color: #025c76;
-  color: white;
-  border: none;
+  color: #000;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
+/* @media(max-width: 500px){
+  #level-title {
+    font-size: 1.2rem;
+    display: none;
+  }
+} */
