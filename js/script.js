@@ -34,15 +34,15 @@ let countChecked = function() {
 
   if (yes > 8) {
       // console.log("you need to see a doc");
-      $('#show-here').html("You are strongly adviced to see a mental health pactitioner");
+      $('#show-here').html("You score"+ " " + yes +"," + " " + "You are strongly adviced to see a mental health practitioner");
       $('#show-here').css("color", "red")
 
   } else if (yes > 4 && yes <= 8) {
-           $('#show-here').html("You are adviced to see a mental health pactitioner")
+           $('#show-here').html("You score"+ " " + yes +"," + " " + "You are adviced to see a mental health practitioner")
            $('#show-here').css("color", "orange")
       // console.log("you might need to see a doc")
   }else {
-      $('#show-here').html("keep up the good work, always look after your overall well-being");
+      $('#show-here').html("You score"+ " " + yes +"," + " " + "keep up the good work, always look after your overall well-being");
       $('#show-here').css("color", "green")
       // console.log("keep up the good work");
   }
