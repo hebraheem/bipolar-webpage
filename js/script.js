@@ -24,24 +24,6 @@ $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
 })
 
-//For get support form
-
-// let form = document.querySelector(".form");
-// let button = document.querySelector("#actbtn");
-// let button1 = document.querySelector(".get-support");
-
-// button1.addEventListener("click", showform);
-// button.addEventListener("click", showform);
-
-
-// function showform(){
-//     if (form.style.display == "none"){
-//         form.style.display = "block"
-//     } else {
-//         form.style.display = "none"
-//     }
-// }
-
 
 
 //FOR CHECKLIST 
@@ -50,14 +32,14 @@ let countChecked = function() {
   let yes = $("input[value='yes']:checked").length
   console.log(yes)
 
-  if (yes > 9) {
+  if (yes > 8) {
       // console.log("you need to see a doc");
       $('#show-here').html("You are strongly adviced to see a mental health pactitioner");
       $('#show-here').css("color", "red")
 
-  } else if (yes > 5 && yes <7) {
+  } else if (yes > 4 && yes <= 8) {
            $('#show-here').html("You are adviced to see a mental health pactitioner")
-           $('#show-here').css("color", "yellow")
+           $('#show-here').css("color", "orange")
       // console.log("you might need to see a doc")
   }else {
       $('#show-here').html("keep up the good work, always look after your overall well-being");
