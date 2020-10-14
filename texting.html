@@ -14,7 +14,15 @@
     <input type="radio" name="radio2" value="no" class="no">no
     <input type="radio" name="radio3" value="yes" class="yes">yes
     <input type="radio" name="radio3" value="no" class="no">no
-   
+    <label for=""><span>yes</span><input type="radio" name="radio4" value="yes" class="yes"></label>
+    <input type="radio" name="radio4" value="no" class="no">no
+    <input type="radio" name="radio5" value="yes" class="yes">yes
+    <input type="radio" name="radio5" value="no" class="no">no
+    <input type="radio" name="radio6" value="yes" class="yes">yes
+    <input type="radio" name="radio6" value="no" class="no">no
+    <input type="radio" name="radio7" value="yes" class="yes">yes
+    <input type="radio" name="radio7" value="no" class="no">no
+   <P class="show"></P>
     <input type="submit" id="submit" name="submit">
    
     <script src="jquery-3.5.1.min.js"></script>
@@ -28,8 +36,28 @@
         //     }
         // })
 
-            // $(".yes").change(function(){
+            // $(".yes").click(function(){
             //     if(this.value === "yes"){
+            //         console.log(this.value)
+            //         counter++
+            //         // console.log(counter)
+            //         if (counter > 7) {
+            //             // console.log("you need to see a doc");
+            //             $('.show').html("you might need to see a doc")
+            //         } if (counter > 5 && counter <7) {
+            //             $('.show').html("you might need to see a doc")
+            //             // console.log("you might need to see a doc")
+            //         }else {
+            //             $('.show').html("keep up the good work")
+            //             // console.log("keep up the good work");
+            //         }
+            //     }
+            // })
+
+            // $('#submit').click(function(){
+            //     // console.log('yepee')
+            //     // $(".yes").change(function(){
+            //     if($("input[type='radio']").value === "yes"){
             //         counter++
             //         // console.log(counter)
             //         if (counter > 7) {
@@ -41,23 +69,7 @@
             //         }
             //     }
             // })
-
-            $('#submit').click(function(){
-                // console.log('yepee')
-                // $(".yes").change(function(){
-                if($("input[type='radio']").value === "yes"){
-                    counter++
-                    // console.log(counter)
-                    if (counter > 7) {
-                        console.log("you need to see a doc");
-                    } if (counter > 5 && counter <7) {
-                        console.log("you might need to see a doc")
-                    }else {
-                        console.log("keep up the good work");
-                    }
-                }
-            })
-            //})
+            // //})
          
 
     
@@ -82,18 +94,100 @@
             // let submit = document.getElementById('submit');
             // let radio = document.querySelectorAll('input[type="radio"]');
             // submit.addEventListener('click', showresult);
-            
+            // console.log(radio)
             // function showresult(){
             //     counter = 0;
             //     for (i =0; i< radio.lenght; i++){
             //         if (radio[i].value === "yes"){
-            //             console.log(radio[i].value)
+            //             console.log(this.radio[i].value)
             //             counter++
             //             console.log(counter)
             //         }
                    
             //     }
             // }
+
+            // // $(".yes").click(function(){
+            //     let yes = $('input[type="radio"]:checked').val();
+            //      console.log(yes)
+            //     $('#submit').click(function(){
+            //         //console.log('hacked')
+            //         if(this.yes === "yes"){
+            //         console.log(this.yes.value)
+            //         counter++
+            //         // console.log(counter)
+            //         if (counter > 7) {
+            //             // console.log("you need to see a doc");
+            //             $('.show').html("you might need to see a doc")
+            //         } if (counter > 5 && counter <7) {
+            //             $('.show').html("you might need to see a doc")
+            //             // console.log("you might need to see a doc")
+            //         }else {
+            //             $('.show').html("keep up the good work")
+            //             // console.log("keep up the good work");
+            //         }
+            //     }
+            //     })
+
+                // let countChecked = function() {
+                //     let yes = $('input[type="radio"]:checked').length;
+                //     // console.log(yes)
+                //     if (counter > 7) {
+                //         // console.log("you need to see a doc");
+                //         $('.show').html("you might need to see a doc")
+                //     } if (counter > 5 && counter <7) {
+                //         $('.show').html("you might need to see a doc")
+                //         // console.log("you might need to see a doc")
+                //     }else {
+                //         $('.show').html("keep up the good work")
+                //         // console.log("keep up the good work");
+                //     }
+                // }
+              
+            //})
+            // let countChecked = function() {
+            //         let yes = $('input[type="radio"]:checked').length;
+            //         // console.log(yes)
+            //         if (counter > 7) {
+            //             // console.log("you need to see a doc");
+            //             $('.show').html("you might need to see a doc")
+            //         } if (counter > 5 && counter <7) {
+            //             $('.show').html("you might need to see a doc")
+            //             // console.log("you might need to see a doc")
+            //         }else {
+            //             $('.show').html("keep up the good work")
+            //             // console.log("keep up the good work");
+            //         }
+            //     }
+            //     countChecked();
+            //     $('#yes').on("click", countChecked());
+
+
+
+      
+            
+
+
+            let countChecked = function() {
+               let yes = $("input[value='yes']:checked").length
+                // if(this.value === "yes"){
+                //     console.log(this.value)
+                //     counter++
+                    // console.log(counter)
+                    if (yes > 7) {
+                        // console.log("you need to see a doc");
+                        $('.show').html("you might need to see a doc")
+                    } if (yes > 5 && counter <7) {
+                        $('.show').html("you might need to see a doc")
+                        // console.log("you might need to see a doc")
+                    }else {
+                        $('.show').html("keep up the good work")
+                        // console.log("keep up the good work");
+                    }
+                //}
+            } 
+            //countChecked();
+            $('#submit').on("click", countChecked)
     </script>
 </body>
 </html>

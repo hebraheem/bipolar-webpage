@@ -42,6 +42,27 @@ $('#myModal').on('shown.bs.modal', function () {
 //     }
 // }
 
+
+
+//FOR CHECKLIST 
+
+let countChecked = function() {
+  let yes = $("input[value='yes']:checked").length
+
+  if (yes > 9) {
+      // console.log("you need to see a doc");
+      $('#show-here').html("you might need to see a doc")
+  } if (yes > 5 && counter <7) {
+           $('#show-here').html("you might need to see a doc")
+      // console.log("you might need to see a doc")
+  }else {
+      $('#show-here').html("keep up the good work")
+      // console.log("keep up the good work");
+  }
+ 
+} 
+$('#view-result').on("click", countChecked);
+
 // for game section
 
 
