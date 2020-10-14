@@ -256,63 +256,9 @@ iframe {
 #support-from {
     width: 100%;
 }
-
-/* Game section */
-#game {
-    padding: 0 8%;
-    padding-bottom: 50px;
+.away {
+    padding-bottom: 100px;
 }
-#level-title {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  
-  .game-container {
-    display: block;
-    width: 50%;
-    margin: auto;
-  
-  }
-  
-  .btn-game {
-    margin: 25px;
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    border: 10px solid black;
-    border-radius: 20%;
-  }
-  .start {
-    width: 100px;
-    height: 45px;
-    margin: auto;
-  }
-  
-  .game-over {
-    background-color: red;
-    opacity: 0.8;
-  }
-  
-  .red {
-    background-color: red;
-  }
-  
-  .green {
-    background-color: green;
-  }
-  
-  .blue {
-    background-color: blue;
-  }
-  
-  .yellow {
-    background-color: yellow;
-  }
-  
-  .pressed {
-    box-shadow: 0 0 20px white;
-    background-color: grey;
-  }
 
 
  /* Footer section styling */
@@ -400,6 +346,9 @@ hr {
     }
     .social {
         left: -10px;
+    }
+    .fact-text h2 {
+        padding-top: 0;
     }
 
 
