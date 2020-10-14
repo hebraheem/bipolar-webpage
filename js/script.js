@@ -48,15 +48,20 @@ $('#myModal').on('shown.bs.modal', function () {
 
 let countChecked = function() {
   let yes = $("input[value='yes']:checked").length
+  console.log(yes)
 
   if (yes > 9) {
       // console.log("you need to see a doc");
-      $('#show-here').html("you might need to see a doc")
-  } if (yes > 5 && counter <7) {
-           $('#show-here').html("you might need to see a doc")
+      $('#show-here').html("You are strongly adviced to see a mental health pactitioner");
+      $('#show-here').css("color", "red")
+
+  } else if (yes > 5 && yes <7) {
+           $('#show-here').html("You are adviced to see a mental health pactitioner")
+           $('#show-here').css("color", "yellow")
       // console.log("you might need to see a doc")
   }else {
-      $('#show-here').html("keep up the good work")
+      $('#show-here').html("keep up the good work, always look after your overall well-being");
+      $('#show-here').css("color", "green")
       // console.log("keep up the good work");
   }
  
