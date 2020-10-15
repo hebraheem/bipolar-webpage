@@ -146,6 +146,26 @@ li a:hover {
 #show-here {
     padding-top: 20px;
 }
+.result-field {
+    border: solid 1px black;
+    display: none;
+}
+.result-field h3 {
+  text-align: center;
+  padding-top: 20px;
+}
+.result-field hr {
+    width: 100%;
+}
+.result-field p{
+    padding-left: 10px;
+}
+.span {
+    color: #009bc9;
+}
+.span a {
+    color: #EC739E;
+}
 
 /* 30 day challenge section */
 
